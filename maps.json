@@ -61,8 +61,29 @@
     ]
   },
   {
-    "name": "Esri World Imagery",
+    "name": {
+      "de": "Weitere Karten",
+      "en": "Additional Maps"
+    },
     "maps": [
+      {
+        "name": "Karte von Berlin 1:5000 (K5 - Farbausgabe)",
+        "url": "https://tiles.codefor.de/berlin/geoportal/basisdaten/k5/{z}/{x}/{y}.png",
+        "options": {
+          "attribution": "<a href=\"https://gdi.berlin.de/geonetwork/srv/ger/catalog.search#/metadata/ed9d0b87-ab8b-3db0-9bf3-7f9218cc004a\" target=\"_blank\" rel=\"noopener\">Senatsverwaltung für Stadtentwicklung, Bauen und Wohnen Berlin / Karte von Berlin 1:5000 (K5 - Farbausgabe)</a>",
+          "minZoom": 6,
+          "maxZoom": 20
+        }
+      },
+      {
+        "name": "Karte des Deutschen Reiches 1893",
+        "url": "https://tiles.codefor.de/rumsey/karte-des-deutschen-reiches-1893/{z}/{x}/{y}.png",
+        "options": {
+          "attribution": "<a href=\"https://www.davidrumsey.com/blog/2011/4/10/karte-des-deutschen-reiches-1893\" target=\"_blank\" rel=\"noopener\">David Rumsey Map Collection, David Rumsey Map Center, Stanford Libraries</a> / <a href=\"https://creativecommons.org/licenses/by-nc-sa/3.0/\" target=\"_blank\" rel=\"noopener\">CC BY-NC-SA 3.0</a>",
+          "minZoom": 6,
+          "maxZoom": 20
+        }
+      },
       {
         "name": "Esri World Imagery",
         "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
