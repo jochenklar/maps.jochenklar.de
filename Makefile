@@ -1,4 +1,4 @@
-.PHONY: dev build preview install local deploy
+.PHONY: dev build preview install clean local deploy
 
 SHELL := /bin/bash
 
@@ -18,8 +18,10 @@ preview:
 install:
 	$(NVM) npm ci
 
-local:
-	rm -rf node_modules/@jochenklar/maps
+clean:
+	rm -rf node_modules/ dist/
+
+local: clean
 	$(NVM) npm install --no-save --install-links ../maps
 
 deploy: build
