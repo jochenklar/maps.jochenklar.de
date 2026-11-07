@@ -1,6 +1,6 @@
 import { defaults } from '@jochenklar/maps'
 
-import groups from './maps.json'
+import maps from './maps.json'
 
 export default {
   view: {
@@ -15,5 +15,5 @@ export default {
       url: 'https://bikerouter.de/#map={zoom}/{lat}/{lng}/standard',
     },
   ],
-  groups,
+  maps,
 }
